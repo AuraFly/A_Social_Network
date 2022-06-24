@@ -1,0 +1,23 @@
+{
+  "name": "secret_insomnia_social_network",
+  "version": "1.0.0",
+  "description": "A social network with no front end :(",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AuraFly/A_Social_Network.git"
+  },
+  "author": "Jordan Covarrubias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AuraFly/A_Social_Network/issues"
+  },
+  "homepage": "https://github.com/AuraFly/A_Social_Network#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0"
+  }
+}
