@@ -15,7 +15,7 @@ connection.once("open", async () => {
 
   for (let i = 0; i < 20; i++) {
     const username = getRandomName(20);
-    const thoughtText = getRandomThought(20);
+    const thoughtText = getRandomThought(1);
     const email = `${username}@email.com`;
 
     users.push({
