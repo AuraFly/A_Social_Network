@@ -1,1 +1,112 @@
-wip;
+const names = [
+  "Hal",
+  "Jordan",
+  "Guy",
+  "Gardner",
+  "John",
+  "Stewart",
+  "Kyle",
+  "Rayner",
+  "Simon",
+  "Baz",
+  "Jessica",
+  "Cruz",
+  "Alan",
+  "Scott",
+  "Tai",
+  "Pham",
+  "Anikan",
+  "Skywalker",
+  "Luke",
+  "Leiah",
+  "Katarn",
+  "Ulic",
+  "Shiev",
+  "Palpatine",
+  "Qel-Droma",
+  "Bruce",
+  "Wayne",
+  "Tony",
+  "Stark",
+  "Ren",
+  "Yuri",
+  "Mugen",
+  "Gojo",
+  "Yoko",
+  "Rain",
+  "Morrigan",
+  "Cloud",
+  "Tifa",
+  "Barret",
+  "Cid",
+  "Yuffie",
+  "Red",
+  "Jessie",
+  "Aerith",
+  "Zach",
+  "Fair",
+  "Jin",
+  "Levi",
+  "Spike",
+  "Egon",
+  "Spengler",
+  "Peter",
+  "Venkman",
+  "Ray",
+  "Stantz",
+  "Winston",
+  "Zeddmore",
+  "Louis",
+  "Tully",
+  "Nezuko",
+  "Sakura",
+  "Leonardo",
+  "Raphael",
+  "Michaelangelo",
+  "Donatello",
+  "Splinter",
+  "April",
+  "Oniel",
+  "Kamina",
+  "Simon",
+  "Nia",
+  "Asuka",
+];
+
+const deepThoughts = [
+  "A different version of you exists in the minds of everyone who knows you.",
+  "When you drink alcohol you are just borrowing happiness from tomorrow.",
+  "I didn’t exist in your world until you started reading this sentence of mine.",
+  "Gorillas don’t know any bodybuilding techniques so we have probably never seen one at full potential.",
+  "I wonder what my dog named me?",
+  "Centaurs have two rib cages",
+  "If I touch my phone in the right places, a pizza will show up at my front door.",
+  "Water is really what a rainbow tastes like.",
+  "You can remember that you forgot something, but you can't remember what you forgot.",
+  "If you eat something with a cheese filling, you become the thing with a cheese filling.",
+  "Birds probably do more people watching than people do bird watching.",
+  "There are more numbers than there are things to count.",
+  "The object of golf is to play the least amount of golf.",
+  "Why arent blueberries blue?",
+  "In order to sleep, first we pretend to sleep",
+  "Everytime you clean something, you need to make something else dirty.",
+  "The word swims upside-down is also swims",
+  "If you rip a hole in a net, there are actually fewer holes in it than there were before.",
+];
+
+const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const getRandomName = () =>
+  `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
+
+const getRandomThought = (int) => {
+  const results = [];
+  for (let i = 0; i < int; i++) {
+    results.push({
+      thoughtText: getRandomArrItem(deepThoughts),
+    });
+  }
+  return results;
+};
+
+module.exports = { getRandomName, getRandomThought };
