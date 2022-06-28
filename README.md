@@ -35,13 +35,31 @@ NPM packeges used:
 
 # Usage
 
-![example](./imagehere)
+[Video Walkthrough](https://drive.google.com/file/d/16vtG2LnEwR87zNjPP9ec5EMwNNyz_rbc/view?usp=sharing)
 
-1. View all reviews made by active users from the homepage.
-2. Signup or Login to existing account from login page.
-3. From your account page, upload your own photo/avatar, post a new review, or delete or edit previous ones.
-4. You can click on 'reply' to anyone's review to leave a comment as long as you are logged in, if you arent logged in, nothing will happen when you try.
-5. More features coming soon!
+![example](./media/SS.gif)
+
+Once server is listening try different CRUD operations/Routes:
+
+1. USERS
+
+- Get all users http://localhost:3001/api/users
+- Get user by ID http://localhost:3001/api/users/IDgoeshere
+- Create a user http://localhost:3001/api/users/ (SEND JSON USERNAME AND EMAIL)
+- Update a user http://localhost:3001/api/users/IDgoeshere (SEND JSON USERNAME AND EMAIL)
+- Add a friend http://localhost:3001/api/users/IDGOESHERE/friends/OTHERIDGOESHERE
+- Remove a friend http://localhost:3001/api/users/IDGOESHERE/friends/IDGOESHERE
+- Delete a user http://localhost:3001/api/users/IDgoeshere
+
+2. THOUGHTS
+
+- Get all thoughts http://localhost:3001/api/thoughts
+- Get thought by ID http://localhost:3001/api/thoughts/THOUGHTIDgoeshere
+- Create a thought http://localhost:3001/api/thoughts/ (SEND JSON USERNAME AND THOUGHTTEXT)
+- Update a thought http://localhost:3001/api/thoughts/THOUGHTIDgoeshere (SEND JSON USERNAME AND THOUGHTTEXT)
+- Add a reaction http://localhost:3001/api/thoughts/THOUGHTIDHERE/reactions
+- Remove a reaction http://localhost:3001/api/thoughts/THOUGHTIDHERE/reactions/ (SEND JSON REACTIONID)
+- Delete a thought http://localhost:3001/api/thoughts/THOUGHTIDgoeshere
 
 # Contribution
 
