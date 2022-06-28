@@ -100,13 +100,13 @@ const getRandomName = () =>
   `${getRandomArrItem(names)}${getRandomArrItem(names)}`;
 
 const getRandomThought = (int) => {
-  const results = [];
+  var results = [];
   for (let i = 0; i < int; i++) {
     results.push({
       thoughtText: getRandomArrItem(deepThoughts),
     });
   }
-  return results;
+  return results[0].thoughtText;
 };
 
 module.exports = { getRandomName, getRandomThought };
