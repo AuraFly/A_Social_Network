@@ -10,12 +10,12 @@ There will be no front end, so this will need to be ran through node, and tested
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
-- [License](#license)
-- [Git Info](#git-info)
-- [Contact](#contact-me)
+- **[Installation](#installation)**
+- **[Usage](#usage)**
+- **[Contribution](#contribution)**
+- **[License](#license)**
+- **[Git Info](#git-info)**
+- **[Contact](#contact-me)**
 
 # Installation
 
@@ -35,13 +35,13 @@ NPM packeges used:
 
 # Usage
 
-[Video Walkthrough](https://drive.google.com/file/d/16vtG2LnEwR87zNjPP9ec5EMwNNyz_rbc/view?usp=sharing)
+**[Video Walkthrough](https://drive.google.com/file/d/16vtG2LnEwR87zNjPP9ec5EMwNNyz_rbc/view?usp=sharing)**
 
 ![example](./media/SS.gif)
 
 Once server is listening try different CRUD operations/Routes:
 
-1. USERS
+**1. USERS**
 
 - Get all users http://localhost:3001/api/users
 - Get user by ID http://localhost:3001/api/users/IDgoeshere
@@ -51,7 +51,7 @@ Once server is listening try different CRUD operations/Routes:
 - Remove a friend http://localhost:3001/api/users/IDGOESHERE/friends/IDGOESHERE
 - Delete a user http://localhost:3001/api/users/IDgoeshere
 
-2. THOUGHTS
+**2. THOUGHTS**
 
 - Get all thoughts http://localhost:3001/api/thoughts
 - Get thought by ID http://localhost:3001/api/thoughts/THOUGHTIDgoeshere
